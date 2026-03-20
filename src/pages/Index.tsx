@@ -79,7 +79,7 @@ const Index = () => {
           transition={{ duration: 1, delay: 0.7 }}
           className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-primary sm:text-7xl md:text-8xl"
         >
-          Ikigai
+          Ikig<span className="text-muted-foreground">|</span><span className="text-[hsl(174,70%,50%)]">AI</span>
         </motion.h1>
 
         {/* Subtitle */}
