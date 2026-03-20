@@ -12,8 +12,14 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      display: ['"Space Grotesk"', 'sans-serif'],
+      body: ['"Inter"', 'sans-serif'],
+    },
     extend: {
       colors: {
+        "glow-cyan": "hsl(var(--glow-cyan))",
+        "glow-violet": "hsl(var(--glow-violet))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
