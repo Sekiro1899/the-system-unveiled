@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import ikigaiLogo from "@/assets/ikigai-logo.png";
 
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <motion.a
     href="#"
     aria-label={label}
-    className="group relative flex h-14 w-14 items-center justify-center rounded-full border border-border bg-card/50 backdrop-blur-sm transition-all hover:border-glow-cyan/50 hover:shadow-[0_0_20px_hsl(174_70%_50%/0.2)]"
+    className="group relative flex h-14 w-14 items-center justify-center rounded-full border border-border bg-card/50 backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-lg"
     whileHover={{ scale: 1.15, y: -4 }}
     whileTap={{ scale: 0.95 }}
   >
@@ -42,24 +43,31 @@ const Index = () => {
     <div className="relative min-h-screen overflow-hidden bg-background">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="h-full w-full object-cover opacity-60" />
+        <img src={heroBg} alt="" className="h-full w-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
       </div>
 
-      {/* Radial glow overlay */}
-      <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
-
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="mb-6"
+        >
+          <img src={ikigaiLogo} alt="Ikigai" className="h-28 w-auto sm:h-36" />
+        </motion.div>
+
         {/* Tagline chip */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="mb-8"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-glow-cyan/20 bg-card/40 px-5 py-2 font-body text-sm tracking-widest uppercase text-glow-cyan backdrop-blur-md">
-            <span className="inline-block h-2 w-2 animate-pulse-slow rounded-full bg-glow-cyan" />
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary/10 bg-secondary px-5 py-2 font-body text-sm tracking-widest uppercase text-primary">
+            <span className="inline-block h-2 w-2 animate-pulse-slow rounded-full bg-primary" />
             Coming Soon
           </span>
         </motion.div>
@@ -68,19 +76,17 @@ const Index = () => {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-7xl md:text-8xl"
+          transition={{ duration: 1, delay: 0.7 }}
+          className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-primary sm:text-7xl md:text-8xl"
         >
-          The System
-          <br />
-          <span className="text-glow-cyan text-glow-cyan">Podcast</span>
+          Ikigai
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
           className="mt-6 max-w-lg font-body text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
           Tech. Society. The future of the system.
@@ -88,19 +94,19 @@ const Index = () => {
           <span className="text-foreground/70">Conversations that question everything.</span>
         </motion.p>
 
-        {/* Email signup hint */}
+        {/* Email signup */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
+          transition={{ duration: 0.8, delay: 1.3 }}
           className="mt-10 flex w-full max-w-md flex-col gap-3 sm:flex-row"
         >
           <input
             type="email"
             placeholder="Enter your email for early access"
-            className="flex-1 rounded-lg border border-border bg-card/50 px-5 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground backdrop-blur-sm transition-all focus:border-glow-cyan/50 focus:outline-none focus:ring-1 focus:ring-glow-cyan/30"
+            className="flex-1 rounded-lg border border-border bg-secondary px-5 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-primary/30 focus:outline-none focus:ring-1 focus:ring-primary/20"
           />
-          <button className="rounded-lg bg-glow-cyan px-6 py-3.5 font-display text-sm font-semibold text-accent-foreground transition-all hover:shadow-[0_0_25px_hsl(174_70%_50%/0.4)] active:scale-95">
+          <button className="rounded-lg bg-primary px-6 py-3.5 font-display text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95">
             Notify Me
           </button>
         </motion.div>
@@ -109,7 +115,7 @@ const Index = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.3 }}
+          transition={{ duration: 0.8, delay: 1.6 }}
           className="mt-16"
         >
           <p className="mb-5 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
@@ -123,11 +129,11 @@ const Index = () => {
           </div>
         </motion.div>
 
-        {/* Subtle hint topics */}
+        {/* Topic hints */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, delay: 1.8 }}
+          transition={{ duration: 1.2, delay: 2.0 }}
           className="mt-20 flex flex-wrap justify-center gap-3"
         >
           {["AI & Ethics", "Digital Sovereignty", "Post-Truth Era", "Decentralization", "Surveillance Capitalism"].map((topic, i) => (
@@ -135,17 +141,14 @@ const Index = () => {
               key={topic}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 2 + i * 0.15 }}
-              className="rounded-full border border-border/50 bg-card/30 px-4 py-1.5 font-body text-xs text-muted-foreground backdrop-blur-sm"
+              transition={{ duration: 0.5, delay: 2.2 + i * 0.15 }}
+              className="rounded-full border border-border bg-secondary/60 px-4 py-1.5 font-body text-xs text-muted-foreground"
             >
               {topic}
             </motion.span>
           ))}
         </motion.div>
       </div>
-
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </div>
   );
 };

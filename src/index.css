@@ -7,47 +7,47 @@
 @layer base {
   :root {
     --font-size: 16px;
-    --background: 240 47% 5%;
-    --foreground: 0 0% 97%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 240 30% 8%;
-    --card-foreground: 0 0% 97%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 240 30% 8%;
-    --popover-foreground: 0 0% 97%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 240 47% 5%;
+    --primary: 246 90% 5%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 10% 18%;
-    --secondary-foreground: 0 0% 97%;
+    --secondary: 249 12% 93%;
+    --secondary-foreground: 246 90% 5%;
 
-    --muted: 240 10% 14%;
-    --muted-foreground: 240 5% 50%;
+    --muted: 240 9% 93%;
+    --muted-foreground: 240 6% 48%;
 
-    --accent: 174 70% 50%;
-    --accent-foreground: 240 47% 5%;
+    --accent: 220 14% 92%;
+    --accent-foreground: 246 90% 5%;
 
-    --destructive: 345 82% 47%;
+    --destructive: 348 81% 46%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 18%;
-    --input: 240 10% 18%;
-    --ring: 174 70% 50%;
+    --border: 0 0% 0% / 0.1;
+    --input: 0 0% 0% / 0;
+    --ring: 0 0% 44%;
 
     --radius: 0.625rem;
 
     --glow-cyan: 174 70% 50%;
     --glow-violet: 270 60% 60%;
 
-    --sidebar-background: 240 30% 6%;
-    --sidebar-foreground: 0 0% 97%;
-    --sidebar-primary: 240 47% 5%;
+    --sidebar-background: 0 0% 97%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 246 90% 5%;
     --sidebar-primary-foreground: 0 0% 97%;
-    --sidebar-accent: 240 10% 14%;
-    --sidebar-accent-foreground: 0 0% 97%;
-    --sidebar-border: 240 10% 18%;
-    --sidebar-ring: 174 70% 50%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 0 0% 44%;
   }
 
   * {
