@@ -12,8 +12,14 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      display: ['"Space Grotesk"', 'sans-serif'],
+      body: ['"Inter"', 'sans-serif'],
+    },
     extend: {
       colors: {
+        "glow-cyan": "hsl(var(--glow-cyan))",
+        "glow-violet": "hsl(var(--glow-violet))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -80,10 +86,20 @@ export default {
             height: "0",
           },
         },
+        pulse: {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "1" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-slow": "pulse 3s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },
