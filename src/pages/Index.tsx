@@ -101,7 +101,7 @@ const Index = () => {
 
       {/* Microphone background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <img src={microphoneBg} alt="" className="h-[80%] w-auto object-contain opacity-[0.07]" />
+        <img src={microphoneBg} alt="" className="h-[85%] w-auto object-contain opacity-[0.15]" />
       </div>
 
       {/* Floating words */}
