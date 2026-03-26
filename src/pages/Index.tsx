@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import ikigaiLogo from "@/assets/ikigai-logo.png";
 import microphoneBg from "@/assets/microphone-bg.png";
+import AudioPlayer from "@/components/AudioPlayer";
 
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <motion.a
