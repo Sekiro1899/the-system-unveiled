@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 import ikigaiLogo from "@/assets/ikigai-logo.png";
+import microphoneBg from "@/assets/microphone-bg.png";
 
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <motion.a
@@ -96,6 +97,11 @@ const Index = () => {
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="h-full w-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
+      </div>
+
+      {/* Microphone background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img src={microphoneBg} alt="" className="h-[80%] w-auto object-contain opacity-[0.07]" />
       </div>
 
       {/* Floating words */}
