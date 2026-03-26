@@ -72,7 +72,7 @@ const FloatingWord = ({ word, index }: { word: string; index: number }) => {
 
   return (
     <motion.span
-      className="pointer-events-none absolute whitespace-nowrap font-display text-lg font-semibold tracking-wide text-primary/[0.06] sm:text-2xl md:text-3xl"
+      className="pointer-events-none absolute whitespace-nowrap font-display text-lg font-semibold tracking-wide text-primary/[0.18] sm:text-2xl md:text-3xl"
       style={{ top: yPos }}
       initial={{ x: startX, opacity: 0 }}
       animate={{
