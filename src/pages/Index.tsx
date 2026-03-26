@@ -180,7 +180,7 @@ const Index = () => {
         >
           Tech. Société. L'avenir du système.
           <br />
-          <span className="text-foreground/70">Des conversations qui questionnent tout.</span>
+          <span className="text-foreground font-semibold">Des conversations qui questionnent tout.</span>
         </motion.p>
 
         {/* Email signup */}
@@ -193,9 +193,9 @@ const Index = () => {
           <input
             type="email"
             placeholder="Entrez votre email pour un accès anticipé"
-            className="flex-1 rounded-lg border border-border bg-secondary px-5 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-primary/30 focus:outline-none focus:ring-1 focus:ring-primary/20"
+            className="flex-1 rounded-full border border-border bg-secondary px-5 py-3.5 font-body text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-primary/30 focus:outline-none focus:ring-1 focus:ring-primary/20"
           />
-          <button className="rounded-lg bg-primary px-6 py-3.5 font-display text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95">
+          <button className="rounded-full bg-primary px-6 py-3.5 font-display text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95">
             Me notifier
           </button>
         </motion.div>
