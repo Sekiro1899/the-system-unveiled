@@ -99,6 +99,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
       </div>
 
+      {/* Microphone background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img src={microphoneBg} alt="" className="h-[80%] w-auto object-contain opacity-[0.07]" />
+      </div>
+
       {/* Floating words */}
       <div className="absolute inset-0 overflow-hidden">
         {floatingWords.map((word, i) => (
