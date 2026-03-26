@@ -231,6 +231,8 @@ const Index = () => {
           ))}
         </motion.div>
       </div>
+      {/* Audio Player */}
+      <AudioPlayer />
     </div>
   );
 };
