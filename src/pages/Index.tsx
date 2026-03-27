@@ -140,7 +140,7 @@ const Index = () => {
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
               <span className="relative inline-flex items-center">
-                <img src={headphonesIcon} alt="" className="absolute -top-4 left-1/2 -translate-x-1/2 h-8 w-8 sm:-top-6 sm:h-10 sm:w-10 [filter:invert(30%)_sepia(80%)_saturate(500%)_hue-rotate(240deg)_brightness(90%)]" />
+                <img src={headphonesIcon} alt="" className="absolute -top-8 left-1/2 -translate-x-1/2 h-12 w-12 sm:-top-12 sm:h-16 sm:w-16 md:-top-14 md:h-20 md:w-20 [filter:invert(30%)_sepia(80%)_saturate(500%)_hue-rotate(240deg)_brightness(90%)]" />
                 I
               </span>
               kig
