@@ -134,12 +134,16 @@ const Index = () => {
         <div className="overflow-hidden">
           <h1 className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-primary sm:text-7xl md:text-8xl">
             <motion.span
-              className="inline-block"
+              className="inline-flex items-baseline"
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
-              Ikig
+              <span className="relative inline-flex items-center">
+                <Headphones className="absolute -top-2 left-1/2 -translate-x-1/2 text-[hsl(var(--glow-violet))] sm:-top-3" size={28} strokeWidth={2.5} />
+                I
+              </span>
+              kig
             </motion.span>
             <motion.span
               className="inline-block text-[hsl(var(--glow-violet))]"
