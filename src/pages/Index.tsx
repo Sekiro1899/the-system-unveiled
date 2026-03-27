@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Headphones } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import ikigaiLogo from "@/assets/ikigai-logo.png";
 import microphoneBg from "@/assets/microphone-bg.png";
 import AudioPlayer from "@/components/AudioPlayer";
 
@@ -96,15 +96,9 @@ const Index = () => {
     <div className="relative min-h-screen overflow-hidden bg-background">
       {/* Concrete / béton ciré texture overlay */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="h-full w-full object-cover opacity-20 mix-blend-overlay" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
-        {/* Subtle noise grain for béton ciré feel */}
-        <div className="absolute inset-0 opacity-[0.07]" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          backgroundSize: '200px 200px',
-        }} />
-        {/* Vignette edges */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,hsl(30_3%_10%/0.6)_100%)]" />
+        <img src={heroBg} alt="" className="h-full w-full object-cover opacity-40" />
+        <div className="absolute inset-0 bg-background/50" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,hsl(30_3%_10%/0.7)_100%)]" />
       </div>
 
       {/* Microphone background */}
@@ -121,15 +115,7 @@ const Index = () => {
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6"
-        >
-          <img src={ikigaiLogo} alt="IkigAI" className="h-28 w-auto sm:h-36" />
-        </motion.div>
+        {/* Tagline chip */}
 
         {/* Tagline chip */}
         <motion.div
@@ -148,12 +134,16 @@ const Index = () => {
         <div className="overflow-hidden">
           <h1 className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-primary sm:text-7xl md:text-8xl">
             <motion.span
-              className="inline-block"
+              className="inline-flex items-baseline"
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
-              Ikig
+              <span className="relative inline-flex items-center">
+                <Headphones className="absolute -top-2 left-1/2 -translate-x-1/2 text-[hsl(var(--glow-violet))] sm:-top-3" size={28} strokeWidth={2.5} />
+                I
+              </span>
+              kig
             </motion.span>
             <motion.span
               className="inline-block text-[hsl(var(--glow-violet))]"
