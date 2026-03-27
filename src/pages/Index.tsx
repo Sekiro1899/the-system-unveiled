@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Headphones } from "lucide-react";
+import headphonesIcon from "@/assets/headphones-icon.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import microphoneBg from "@/assets/microphone-bg.png";
 import AudioPlayer from "@/components/AudioPlayer";
@@ -140,7 +140,7 @@ const Index = () => {
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
               <span className="relative inline-flex items-center">
-                <Headphones className="absolute -top-2 left-1/2 -translate-x-1/2 text-[hsl(var(--glow-violet))] sm:-top-3" size={28} strokeWidth={2.5} />
+                <img src={headphonesIcon} alt="" className="absolute -top-4 left-1/2 -translate-x-1/2 h-8 w-8 sm:-top-6 sm:h-10 sm:w-10 [filter:invert(30%)_sepia(80%)_saturate(500%)_hue-rotate(240deg)_brightness(90%)]" />
                 I
               </span>
               kig
