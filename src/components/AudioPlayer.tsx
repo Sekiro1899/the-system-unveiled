@@ -89,7 +89,7 @@ const AudioPlayer = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 2.8 }}
-      className="fixed bottom-0 left-0 right-0 z-50 h-20 border-t border-border bg-card/80 backdrop-blur-xl"
+      className="fixed bottom-0 left-0 right-0 z-50 h-20 border-t border-primary/20 bg-[hsl(270_30%_8%/0.85)] backdrop-blur-xl"
     >
       <div className="mx-auto flex h-full max-w-6xl items-center gap-4 px-4 sm:gap-6 sm:px-6">
         {/* Track info + equalizer */}
