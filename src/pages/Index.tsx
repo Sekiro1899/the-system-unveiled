@@ -115,15 +115,7 @@ const Index = () => {
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6"
-        >
-          <img src={ikigaiLogo} alt="IkigAI" className="h-28 w-auto sm:h-36" />
-        </motion.div>
+        {/* Tagline chip */}
 
         {/* Tagline chip */}
         <motion.div
