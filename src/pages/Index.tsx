@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import headphonesIcon from "@/assets/headphones-icon.png";
+import { Headphones } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import microphoneBg from "@/assets/microphone-bg.png";
 import AudioPlayer from "@/components/AudioPlayer";
