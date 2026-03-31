@@ -231,7 +231,7 @@ const Index = () => {
           transition={{ duration: 1.2, delay: 2.4 }}
           className="mt-20 flex flex-wrap justify-center gap-3"
         >
-          {["IA & Éthique", "Souveraineté Numérique", "Ère Post-Vérité", "Décentralisation", "Capitalisme de Surveillance"].map((topic, i) => (
+          {["AI & Ethics", "Digital Sovereignty", "Post Truth Era", "Techno-feudalism", "Surveillance Capitalism"].map((topic, i) => (
             <motion.span
               key={topic}
               initial={{ opacity: 0, scale: 0.8 }}
