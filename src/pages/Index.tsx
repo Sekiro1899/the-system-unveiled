@@ -155,7 +155,21 @@ const Index = () => {
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
               <span className="relative inline-flex items-center">
-                <Headphones className="absolute -top-8 left-1/2 -translate-x-1/2 h-10 w-10 sm:-top-11 sm:h-14 sm:w-14 md:-top-14 md:h-[4.5rem] md:w-[4.5rem] text-[hsl(var(--glow-violet))] drop-shadow-[0_0_10px_hsl(var(--glow-violet)/0.4)]" strokeWidth={1.8} />
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#8B5CF6"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="absolute -top-7 left-1/2 -translate-x-1/2 sm:-top-10 sm:w-10 sm:h-10 md:-top-12 md:w-12 md:h-12"
+                  style={{ filter: "drop-shadow(0 0 8px rgba(139, 92, 246, 0.5))" }}
+                >
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg>
                 I
               </span>
               kig
