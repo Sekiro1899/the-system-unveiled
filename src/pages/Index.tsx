@@ -156,7 +156,7 @@ const Index = () => {
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
               <span className="relative inline-flex items-center">
-                <Headphones className="absolute -top-7 left-1/2 -translate-x-1/2 h-8 w-8 sm:-top-10 sm:h-12 sm:w-12 md:-top-14 md:h-16 md:w-16 text-[hsl(var(--glow-violet))] drop-shadow-[0_0_8px_hsl(var(--glow-violet)/0.5)]" strokeWidth={2} />
+                <Headphones className="absolute -top-8 left-1/2 -translate-x-1/2 h-10 w-10 sm:-top-11 sm:h-14 sm:w-14 md:-top-14 md:h-[4.5rem] md:w-[4.5rem] text-[hsl(var(--glow-violet))] drop-shadow-[0_0_10px_hsl(var(--glow-violet)/0.4)]" strokeWidth={1.8} />
                 I
               </span>
               kig
