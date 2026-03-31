@@ -106,6 +106,39 @@ const FloatingWord = ({ word, index }: { word: string; index: number }) => {
   );
 };
 
+const TypewriterQuote = ({ text, delay }: { text: string; delay: number }) => {
+  const [displayed, setDisplayed] = useState("");
+  const [started, setStarted] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setStarted(true), delay * 1000);
+    return () => clearTimeout(timeout);
+  }, [delay]);
+
+  useEffect(() => {
+    if (!started) return;
+    if (displayed.length < text.length) {
+      const t = setTimeout(() => setDisplayed(text.slice(0, displayed.length + 1)), 50);
+      return () => clearTimeout(t);
+    }
+  }, [started, displayed, text]);
+
+  return (
+    <p
+      className="mt-5 font-body text-sm italic"
+      style={{
+        color: "#a78bfa",
+        textShadow: "0 0 12px rgba(167, 139, 250, 0.4)",
+      }}
+    >
+      {displayed}
+      {started && displayed.length < text.length && (
+        <span className="animate-pulse">|</span>
+      )}
+    </p>
+  );
+};
+
 const Index = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-background">
