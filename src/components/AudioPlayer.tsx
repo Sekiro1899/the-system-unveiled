@@ -106,7 +106,7 @@ const AudioPlayer = () => {
           {/* Play button */}
           <button
             onClick={() => setPlaying((p) => !p)}
-            className="group flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[hsl(var(--glow-violet))] to-[hsl(var(--glow-cyan))] text-background shadow-lg transition-transform hover:scale-105 active:scale-95"
+            className="group flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[hsl(var(--glow-violet))] to-[hsl(270_80%_75%)] text-background shadow-lg transition-transform hover:scale-105 active:scale-95"
           >
             <AnimatePresence mode="wait">
               {playing ? (
