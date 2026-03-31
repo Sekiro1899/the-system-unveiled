@@ -206,6 +206,16 @@ const Index = () => {
           </button>
         </motion.div>
 
+        {/* Tagline quote */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.9 }}
+          className="mt-5 font-body text-sm italic text-muted-foreground/70"
+        >
+          Laissez parler le bruit. Comprenez le silence...
+        </motion.p>
+
         {/* Social platforms */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

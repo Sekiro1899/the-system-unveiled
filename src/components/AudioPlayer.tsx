@@ -142,7 +142,7 @@ const AudioPlayer = () => {
                       style={{
                         height: `${h}px`,
                         background: filled
-                          ? "linear-gradient(to top, hsl(var(--glow-violet)), hsl(var(--glow-cyan)))"
+                          ? "linear-gradient(to top, hsl(var(--glow-violet)), hsl(270 80% 75%))"
                           : "hsl(var(--muted))",
                       }}
                     />
