@@ -179,7 +179,7 @@ const Index = () => {
         </motion.div>
 
         {/* Title — Ikig slides from left, AI drops from top */}
-        <div className="overflow-hidden">
+        <div style={{ overflow: "visible" }}>
           <h1 className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-primary sm:text-7xl md:text-8xl">
             <motion.span
               className="inline-flex items-baseline"
@@ -187,21 +187,22 @@ const Index = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
-              <span className="relative inline-flex items-center">
+              <span className="relative" style={{ display: "inline-block" }}>
                 <svg
-                  width="30"
-                  height="30"
+                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#8B5CF6"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="absolute -top-7 left-1/2 -translate-x-1/2 sm:-top-10 sm:w-10 sm:h-10 md:-top-12 md:w-12 md:h-12"
-                  style={{ filter: "drop-shadow(0 0 8px rgba(139, 92, 246, 0.5))" }}
+                  fill="#8B5CF6"
+                  style={{
+                    position: "absolute",
+                    top: "-36px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    width: "28px",
+                    height: "28px",
+                    filter: "drop-shadow(0 0 6px #8B5CF6)",
+                  }}
                 >
-                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                  <path d="M12 3C7.03 3 3 7.03 3 12v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H5v-1a7 7 0 0 1 14 0v1h-1a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-5c0-4.97-4.03-9-9-9z" />
                 </svg>
                 I
               </span>
