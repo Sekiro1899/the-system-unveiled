@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import headphonesIcon from "@/assets/headphones-icon.png";
+import { Headphones } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import microphoneBg from "@/assets/microphone-bg.png";
 import AudioPlayer from "@/components/AudioPlayer";
@@ -156,7 +156,7 @@ const Index = () => {
               transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.7 }}
             >
               <span className="relative inline-flex items-center">
-                <img src={headphonesIcon} alt="" className="absolute -top-8 left-1/2 -translate-x-1/2 h-12 w-12 sm:-top-12 sm:h-16 sm:w-16 md:-top-14 md:h-20 md:w-20 [filter:invert(30%)_sepia(80%)_saturate(500%)_hue-rotate(240deg)_brightness(90%)]" />
+                <Headphones className="absolute -top-8 left-1/2 -translate-x-1/2 h-10 w-10 sm:-top-12 sm:h-14 sm:w-14 md:-top-16 md:h-18 md:w-18 text-[hsl(var(--glow-violet))]" strokeWidth={1.5} />
                 I
               </span>
               kig
@@ -205,6 +205,16 @@ const Index = () => {
             Me notifier
           </button>
         </motion.div>
+
+        {/* Tagline quote */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.9 }}
+          className="mt-5 font-body text-sm italic text-muted-foreground/70"
+        >
+          Laissez parler le bruit. Comprenez le silence...
+        </motion.p>
 
         {/* Social platforms */}
         <motion.div
