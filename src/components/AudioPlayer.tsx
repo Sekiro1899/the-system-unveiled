@@ -21,7 +21,7 @@ const Equalizer = ({ playing }: { playing: boolean }) => (
     {Array.from({ length: BAR_COUNT }).map((_, i) => (
       <motion.span
         key={i}
-        className="w-[3px] rounded-full bg-gradient-to-t from-[hsl(var(--glow-violet))] to-[hsl(var(--glow-cyan))]"
+        className="w-[3px] rounded-full bg-gradient-to-t from-[hsl(var(--glow-violet))] to-[hsl(270_80%_75%)]"
         animate={
           playing
             ? {
